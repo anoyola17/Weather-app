@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/styles.css">
+    <title>404 - Not Found</title>
+</head>
+<body>
+    <div class="main-content">                          {{! This is the main content area for 404.hbs }}
+        {{>header}}                                     {{! This is the header partial { header.hbs }}
+        <p>{{errorMessage}}</p>                         {{! Template literal for error message from app.js }}
+    </div>
+
+    {{>footer}}                                         {{! This is the footer partial {footer.hbs }}
+</body>
+</html>
